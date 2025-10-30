@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public void GameStart()
     {
+        EventBus.GameStart?.Invoke();
         SceneManager.LoadScene("Game");
     }
     
